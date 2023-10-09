@@ -1,4 +1,5 @@
 import { StarIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const reviews = {
   average: 5,
@@ -18,7 +19,7 @@ const reviews = {
         <p>Mantap mesin normal, pengiriman cepat. Packing aman sekali dibonusin packing kayu👍🏻 bismillah buat usaha🤲🏻</p>
       `,
       author: "Rattandi Ibnu Tsaqif",
-      avatarSrc: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
+      avatarSrc: "/images/avatar.jpg",
     },
     {
       id: 2,
@@ -27,7 +28,7 @@ const reviews = {
         <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
       `,
       author: "Emily Selman",
-      avatarSrc: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
+      avatarSrc: "/images/avatar.jpg",
     },
     // More reviews...
   ],
@@ -100,7 +101,7 @@ export default function Review() {
               {reviews.featured.map((review) => (
                 <div key={review.id} className="py-12">
                   <div className="flex items-center">
-                    <img src={review.avatarSrc} alt={`${review.author}.`} className="h-12 w-12 rounded-full" />
+                    <Image src={review.avatarSrc} alt={`${review.author}.`} width={300} height={300} className="object-cover h-12 w-12" />
                     <div className="ml-4">
                       <h4 className="text-sm font-bold text-gray-900">{review.author}</h4>
                       <div className="mt-1 flex items-center">

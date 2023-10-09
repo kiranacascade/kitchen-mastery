@@ -1,4 +1,5 @@
 import products from "@/data/bingsoo";
+import Image from "next/image";
 
 export default function Product() {
   return (
@@ -10,8 +11,8 @@ export default function Product() {
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-6">
           {products.map((product) => (
             <div key={product.id} className="group relative flex flex-col overflow-hidden rounded-xl shadow-xl border-gray-200 bg-white transform transition-transform hover:scale-110">
-              <div className="aspect-w-3 aspect-h-3 bg-gray-200 group-hover:opacity-95">
-                <img src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center sm:h-full sm:w-full" />
+              <div className="aspect-w-1 aspect-h-1 bg-gray-200 group-hover:opacity-95">
+                <Image src={product.imageSrc} alt={product.imageAlt} width={700} height={700} className="h-full w-full object-cover object-center sm:h-full sm:w-full" />
               </div>
               <div className="flex flex-1 flex-col space-y-2 p-4 ">
                 <h3 className="text-lg font-bold text-neutral-900">
@@ -20,11 +21,7 @@ export default function Product() {
                     {product.name}
                   </a>
                 </h3>
-                {/* <p className="text-sm text-gray-500">{product.description}</p> */}
-                <div className="flex flex-1 flex-col justify-end">
-                  {/* <p className="text-sm italic text-gray-500">{product.options}</p> */}
-                  {/* <p className="text-base font-bold text-red-600">{product.price}</p> */}
-                </div>
+                <div className="flex flex-1 flex-col justify-end"></div>
               </div>
             </div>
           ))}

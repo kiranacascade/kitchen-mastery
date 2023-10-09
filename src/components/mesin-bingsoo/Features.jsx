@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import products from "@/data/bingsoo";
+import Image from "next/image";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -60,7 +61,7 @@ export default function Features() {
 
                   <div className="lg:col-span-6">
                     <div className="overflow-hidden rounded-lg bg-gray-100 aspect-w-5 aspect-h-4">
-                      <img src={product.image} alt={product.name} className="object-cover object-center" />
+                      <Image src={product.image} alt={product.name} className="object-cover object-center" width={1600} height={1200} />
                     </div>
                   </div>
                 </div>

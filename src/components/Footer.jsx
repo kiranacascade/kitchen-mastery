@@ -2,6 +2,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { ClockIcon, EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { TbBrandShopee } from "react-icons/tb";
+import Image from "next/image";
 
 const footerNavigation = {
   contacts: [
@@ -67,7 +68,14 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-4 xl:gap-8">
           {/* logo + desc */}
           <div className="space-y-8 xl:col-span-2">
-            <img className="h-10" src="/images/logo-white.png" alt="Kitchen Mastery" />
+            <div className="w-80 h-12 relative">
+              <Image
+                src="/images/logo-white.png"
+                alt="Kitchen Mastery"
+                width={300} // Set the desired width
+                height={100} // Set the desired height
+              />
+            </div>
             <p className="text-base text-white">Making the world a better place through constructing elegant hierarchies.</p>
             <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (
@@ -78,7 +86,7 @@ export default function Footer() {
               ))}
               <a key="Tokopedia" href="https://www.tokopedia.com/kitchenmastery" className="text-white hover:text-red-600">
                 <span className="sr-only">Tokopedia</span>
-                <img src="/images/logo-tokped-white.png" className="h-6 w-6 p-0.5 hover:bg-neutral-800" aria-hidden="true" />
+                <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={24} height={24} className="p-0.5 hover:bg-neutral-800" aria-hidden="true" />
               </a>
             </div>
           </div>

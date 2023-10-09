@@ -4,9 +4,6 @@ const withImages = require("next-images");
 const nextConfig = {
   reactStrictMode: true,
   ...withImages(),
-  style: {
-    css: ["styles/globals.css"],
-  },
 };
 
 module.exports = nextConfig;

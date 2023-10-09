@@ -1,4 +1,5 @@
 import { StarIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -24,12 +25,10 @@ export default function CTABingsoo() {
       {/* Decorative background image and gradient */}
       <div aria-hidden="true" className="absolute inset-0 -mx-12">
         <div className="absolute inset-0 mx-auto overflow-hidden xl:px-8">
-          <img src="/images/mesin-bingsoo/bingsoo.png" alt="" className="w-full object-cover object-center" />
+          <Image src="/images/mesin-bingsoo/bingsoo.png" alt="" className="w-full object-cover object-center" width={1600} height={1000} />
         </div>
         <div className="absolute inset-0 bg-white bg-opacity-75" />
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white" />
-        {/* <div className="absolute inset-0 bg-neutral-400 bg-blend-multiply bg-opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-white" /> */}
       </div>
 
       {/* Sale */}
@@ -39,7 +38,7 @@ export default function CTABingsoo() {
             Ada yang ingin ditanyakan?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-xl text-neutral-700">Most of our products are limited releases that won't come back. Get your favorite items while they're in stock.</p>
-          <a href="#" className="mt-6 inline-block w-full rounded-lg border border-transparent bg-red-700 py-3 px-8 font-medium text-white hover:bg-red-800 sm:w-auto mr-4">
+          <a href="https://api.whatsapp.com/send?phone=6285600570000" className="mt-6 inline-block w-full rounded-lg border border-transparent bg-red-700 py-3 px-8 font-medium text-white hover:bg-red-800 sm:w-auto mr-4">
             Konsultasi Sekarang
           </a>
         </div>

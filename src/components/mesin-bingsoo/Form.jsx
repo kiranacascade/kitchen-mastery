@@ -53,7 +53,7 @@ export default function Form() {
   return (
     <div>
       {/* Contact */}
-      <section className="relative bg-white lg:mb-32" aria-labelledby="join-heading">
+      <section className="relative bg-white lg:mb-32" aria-labelledby="join-heading" id="kontak-kami">
         <div className="absolute inset-x-0 hidden h-1/2 bg-blue-gray-50 lg:block" aria-hidden="true" />
         <div className="mx-auto max-w-7xl bg-red-700 lg:bg-transparent lg:px-8">
           <div className="lg:grid lg:grid-cols-12">

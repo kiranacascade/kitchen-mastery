@@ -4,6 +4,7 @@ import BestSeller from "@/components/home/BestSeller";
 import CTA from "@/components/home/CTA";
 import Incentives from "@/components/home/Incentives";
 import Review from "@/components/home/Review";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,11 +16,11 @@ export default function Home() {
           <div className="mx-auto">
             <div className="relative shadow-xl sm:overflow-hidden">
               <div className="absolute inset-0">
-                <img className="h-full w-full object-cover" src="/images/hero.png" alt="People working on laptops" />
+                <Image src="/images/hero.png" alt="Kitchen Mastery Machine" width={2380} height={1240} className="h-full w-full object-cover object-center" />
                 <div className="absolute inset-0 bg-gradient-to-r from-neutral-700 to-red-900 mix-blend-multiply" />
               </div>
               <div className="relative py-16 px-6 sm:py-24 lg:py-32 lg:px-8">
-                <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                <h1 className="text-center text-4xl font-bold sm:text-5xl lg:text-6xl">
                   <span className="block text-white">Welcome to</span>
                   <span className="block text-neutral-200 mt-2">Kitchen Mastery</span>
                 </h1>

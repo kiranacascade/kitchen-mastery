@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { TbBrandShopee } from "react-icons/tb";
+import Image from "next/image";
 
 const links = [
   { name: "PRODUCTS", href: "/products" },
@@ -17,7 +18,7 @@ export default function Navbar() {
         <div className="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
             <span className="sr-only">Kitchen Mastery</span>
-            <img className="h-8 w-auto sm:h-10 shrink-0" src="/images/logo-white.png" alt="Kitchen Mastery" />
+            <Image src="/images/logo-white.png" alt="Kitchen Mastery" width={280} height={110} className="h-8 w-auto sm:h-10 shrink-0" />
           </a>
         </div>
         <div className="-my-2 -mr-2 lg:hidden">
@@ -39,7 +40,7 @@ export default function Navbar() {
             href="https://www.tokopedia.com/kitchenmastery"
             className="ml-4 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
           >
-            <img className="h-4 w-auto mr-2" src="/images/logo-tokped-white.png" alt="Tokopedia" />
+            <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={20} height={20} className="h-4 w-auto mr-2" />
             Tokopedia
           </a>
           <a
@@ -58,7 +59,7 @@ export default function Navbar() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img className="h-8 w-auto" src="/images/logo-white.png" alt="Kitchen Mastery" />
+                  <Image src="/images/logo-white.png" alt="Kitchen Mastery" width={280} height={110} className="h-8 w-auto sm:h-10 shrink-0" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-neutral-800 p-2 text-gray-400 hover:neutral-600 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600">
@@ -82,7 +83,7 @@ export default function Navbar() {
                   href="https://www.tokopedia.com/kitchenmastery"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 mb-2"
                 >
-                  <img className="h-4 w-auto mr-2" src="/images/logo-tokped-white.png" alt="Tokopedia" />
+                  <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={20} height={20} className="h-4 w-auto mr-2" />
                   Tokopedia
                 </a>
                 <a href="https://shopee.co.id/kitchenmastery" className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 mb-2">

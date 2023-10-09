@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import allProducts from "@/data/products";
+import Image from "next/image";
 
 const title = "Produk Kami";
 const description = "Kami menyediakan berbagai food processing machine dan kitchen equipment. Salah satu best seller kami yaitu mein bingsoo viral. Silakan jelajahi halaman ini untuk mendapatkan informasi yang Anda butuhkan.";
@@ -16,7 +17,7 @@ export default function Example() {
             {allProducts.map((product) => (
               <div key={product.id} className="group relative flex flex-col overflow-hidden rounded-lg border shadow-xl bg-white">
                 <div className="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
-                  <img src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center sm:h-full sm:w-full" />
+                  <Image src={product.imageSrc} alt={product.imageAlt} width={500} height={500} className="h-full w-full object-cover object-center sm:h-full sm:w-full" />
                 </div>
                 <div className="flex flex-1 flex-col space-y-2 p-4">
                   <h3 className="text-sm font-medium text-gray-900">

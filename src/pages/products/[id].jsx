@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { TbBrandShopee } from "react-icons/tb";
 import { useRouter } from "next/router";
 import LoadingIndicator from "@/components/LoadingIndicator";
+import Image from "next/image";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -15,16 +16,14 @@ export default function ProductDetail({ product }) {
   const router = useRouter();
 
   if (router.isFallback) {
-    // Tampilkan indikator loading jika halaman fallback sedang dimuat
-    return <div>Loading...</div>;
-    // return <LoadingIndicator />;
+    return <LoadingIndicator />;
   }
   return (
     <>
       <Navbar />
       <div className="bg-white">
-        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8 ">
+          <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 mb-8">
             {/* Image gallery */}
             <Tab.Group as="div" className="flex flex-col-reverse">
               {/* Image selector */}
@@ -39,7 +38,7 @@ export default function ProductDetail({ product }) {
                         <>
                           <span className="sr-only"> </span>
                           <span className="absolute inset-0 overflow-hidden rounded-md">
-                            <img src={image} alt="" className="h-full w-full object-cover object-center" />
+                            <Image src={image} alt={product.name} className="h-full w-full object-cover object-center" width={1500} height={1000} />
                           </span>
                           <span className={classNames(selected ? "ring-red-600" : "ring-transparent", "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2")} aria-hidden="true" />
                         </>
@@ -52,7 +51,7 @@ export default function ProductDetail({ product }) {
               <Tab.Panels className="aspect-w-1 aspect-h-1 w-full">
                 {product.images.map((image) => (
                   <Tab.Panel key={image}>
-                    <img src={image} alt={product.name} className="h-full w-full object-cover object-center sm:rounded-lg" />
+                    <Image src={image} alt={product.name} width={1500} height={1500} className="h-full w-full object-cover object-center sm:rounded-lg" />
                   </Tab.Panel>
                 ))}
               </Tab.Panels>

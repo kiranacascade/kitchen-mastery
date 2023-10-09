@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const perks = [
   {
     name: "Garansi Servis 6 Bulan",
@@ -32,7 +34,7 @@ export default function Incentives() {
             <div key={perk.name} className="sm:flex bg-white px-4 py-7 rounded-xl shadow-xl">
               <div className="sm:flex-shrink-0">
                 <div className="flow-root">
-                  <img className="h-24 w-24" src={perk.imageSrc} alt={perk.name} />
+                  <Image className="h-24 w-24" src={perk.imageSrc} alt={perk.name} width={500} height={500} />
                 </div>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">

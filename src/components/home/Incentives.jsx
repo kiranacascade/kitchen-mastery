@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 const incentives = [
   {
-    name: "Free shipping",
+    name: "Pemesanan Mudah & Terpercaya",
     imageSrc: "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
     description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
   },
@@ -10,7 +12,7 @@ const incentives = [
     description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
   },
   {
-    name: "Exchanges",
+    name: "Konsultasi Sepuasnya",
     imageSrc: "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
     description: "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
   },
@@ -28,15 +30,19 @@ export default function Incentives() {
               small print but hope people don't actually read it.
             </p>
           </div>
-          <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" className="object-cover object-center" />
+          <div className="overflow-hidden rounded-lg bg-gray-100">
+            <div className="relative aspect-w-3 aspect-h-2">
+              <Image src="/images/incentives.jpg" alt="incentives" width={900} height={700} />
+            </div>
           </div>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
           {incentives.map((incentive) => (
             <div key={incentive.name} className="sm:flex lg:block bg-white p-5 rounded-lg shadow-xl">
               <div className="sm:flex-shrink-0 ">
-                <img className="h-16 w-16" src={incentive.imageSrc} alt="" />
+                <div className="h-16 w-16 relative">
+                  <Image src={incentive.imageSrc} alt={incentive.name} width={250} height={250} />
+                </div>
               </div>
               <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
                 <h3 className="text-lg font-semibold text-red-700">{incentive.name}</h3>
