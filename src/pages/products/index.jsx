@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import allProducts from "@/data/products";
 import Image from "next/image";
+import Link from "next/link";
 
 const title = "Produk Kami";
 const description = "Kami menyediakan berbagai food processing machine dan kitchen equipment. Salah satu best seller kami yaitu mein bingsoo viral. Silakan jelajahi halaman ini untuk mendapatkan informasi yang Anda butuhkan.";
@@ -21,10 +22,10 @@ export default function Example() {
                 </div>
                 <div className="flex flex-1 flex-col space-y-2 p-4">
                   <h3 className="text-sm font-medium text-gray-900">
-                    <a href={`/products/${product.id}`} className="text-lg font-semibold">
+                    <Link href={`/products/${product.id}`} className="text-lg font-semibold">
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.name}
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm text-gray-500">{product.description}</p>
                   <div className="flex flex-1 flex-col justify-end">

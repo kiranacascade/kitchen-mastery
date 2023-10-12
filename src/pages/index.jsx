@@ -5,6 +5,7 @@ import CTA from "@/components/home/CTA";
 import Incentives from "@/components/home/Incentives";
 import Review from "@/components/home/Review";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,15 +30,15 @@ export default function Home() {
                 </p>
                 <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                   <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                    <a
+                    <Link
                       href="https://api.whatsapp.com/send?phone=6285600570000"
                       className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-red-700 shadow-sm hover:bg-red-50 sm:px-8"
                     >
                       Konsultasi
-                    </a>
-                    <a href="/products" className="flex items-center justify-center rounded-md border border-transparent bg-red-500 bg-opacity-70 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-80 sm:px-8">
+                    </Link>
+                    <Link href="/products" className="flex items-center justify-center rounded-md border border-transparent bg-red-500 bg-opacity-70 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-80 sm:px-8">
                       Belanja Sekarang
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

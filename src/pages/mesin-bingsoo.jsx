@@ -23,13 +23,13 @@ export default function LandingPage() {
 
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-4xl xl:text-5xl">Mesin Bingsoo Viral</h1>
                 <p className="mt-8 text-xl md:text-lg text-neutral-200">
-                  All the charts, datepickers, and notifications in the world can't beat checking off some items on a paper card. All the charts, datepickers, and notifications in the world can't beat checking off some items on a paper
-                  card.
+                  All the charts, datepickers, and notifications in the world can&apos;t beat checking off some items on a paper card. All the charts, datepickers, and notifications in the world can&apos;t beat checking off some items on a
+                  paper card.
                 </p>
                 <div className="mt-10">
-                  <Link href="#kontak-kami" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 font-medium text-white hover:bg-red-700">
+                  <a href="#kontak-kami" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 font-medium text-white hover:bg-red-700">
                     Info Selengkapnya
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

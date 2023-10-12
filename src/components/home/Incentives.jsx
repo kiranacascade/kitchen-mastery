@@ -3,18 +3,18 @@ import Image from "next/image";
 const incentives = [
   {
     name: "Pemesanan Mudah & Terpercaya",
-    imageSrc: "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
-    description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+    imageSrc: "/images/why/pemesanan.png",
+    description: "Nikmati kemudahan memesan produk kami melalui platform online terpercaya seperti Shopee dan Tokopedia. Dapatkan proses pemesanan yang aman, transparan, dan terjamin kepercayaannya.",
   },
   {
-    name: "10-year warranty",
-    imageSrc: "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-    description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+    name: "Garansi Servis",
+    imageSrc: "/images/why/garansi.png",
+    description: "Nikmati Garansi Servis beberapa produk kami untuk ketenangan pikiran. Kami siap memperbaiki masalah tanpa biaya tambahan dalam periode waktu tertentu pertama setelah pembelian.",
   },
   {
     name: "Konsultasi Sepuasnya",
-    imageSrc: "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
-    description: "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+    imageSrc: "/images/why/konsultasi.png",
+    description: "Nikmati Konsultasi Sepuasnya. Kami siap membantu Anda dengan pertanyaan dan panduan tanpa batasan, sehingga Anda selalu merasa didukung dalam setiap langkah.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Incentives() {
             <h2 className="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
             <p className="mt-4 text-gray-500">
               At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the
-              small print but hope people don't actually read it.
+              small print but hope people don&apos;t actually read it.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg bg-gray-100">

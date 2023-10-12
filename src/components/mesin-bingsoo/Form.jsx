@@ -6,6 +6,7 @@ import { getDatabase, ref, set, serverTimestamp } from "firebase/database";
 import { v4 as uuidv4 } from "uuid";
 import firebaseApp from "../../../services/firebase";
 import toast, { Toaster } from "react-hot-toast";
+import Link from "next/link";
 
 export default function Form() {
   const validationSchema = Yup.object().shape({
@@ -185,9 +186,9 @@ export default function Form() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <AiOutlineWhatsApp className="h-6 w-6 text-white" />
-                    <a href="https://api.whatsapp.com/send?phone=6285600570000" className="text-base font-semibold text-white">
+                    <Link href="https://api.whatsapp.com/send?phone=6285600570000" className="text-base font-semibold text-white">
                       0856-0057-0000
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

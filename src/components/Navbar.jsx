@@ -3,6 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { TbBrandShopee } from "react-icons/tb";
 import Image from "next/image";
+import Link from "next/link";
 
 const links = [
   { name: "PRODUCTS", href: "/products" },
@@ -16,10 +17,10 @@ export default function Navbar() {
     <Popover className="relative bg-neutral-800">
       <div className="flex items-center justify-between px-6 py-5 lg:justify-start lg:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
-          <a href="/">
+          <Link href="/">
             <span className="sr-only">Kitchen Mastery</span>
             <Image src="/images/logo-white.png" alt="Kitchen Mastery" width={280} height={110} className="h-8 w-auto sm:h-10 shrink-0" />
-          </a>
+          </Link>
         </div>
         <div className="-my-2 -mr-2 lg:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-neutral-800 p-2 text-neutral-400 hover:bg-neutral-900 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600">
@@ -29,27 +30,27 @@ export default function Navbar() {
         </div>
         <Popover.Group as="nav" className="hidden lg:space-x-10 lg:flex">
           {links.map((link) => (
-            <a href={link.href} key={link.name} className="text-base font-medium text-white hover:text-red-500 tracking-wide">
+            <Link href={link.href} key={link.name} className="text-base font-medium text-white hover:text-red-500 tracking-wide">
               {link.name}
-            </a>
+            </Link>
           ))}
         </Popover.Group>
         <div className="hidden items-center justify-end lg:mr-2 lg:flex lg:flex-1 lg:w-0">
           <span className="text-base text-neutral-300 font-medium">Our Store:</span>
-          <a
+          <Link
             href="https://www.tokopedia.com/kitchenmastery"
             className="ml-4 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
           >
             <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={20} height={20} className="h-4 w-auto mr-2" />
             Tokopedia
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://shopee.co.id/kitchenmastery"
             className="ml-4 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
           >
             <TbBrandShopee className="h-5 w-5 text-white mr-2" aria-hidden="true" />
             Shopee
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -72,24 +73,24 @@ export default function Navbar() {
             <div className="py-6 px-5">
               <div className="grid grid-rows-4 gap-2">
                 {links.map((link) => (
-                  <a href={link.href} key={link.name} className="text-base font-medium text-white hover:text-red-600">
+                  <Link href={link.href} key={link.name} className="text-base font-medium text-white hover:text-red-600">
                     {link.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="mt-6">
                 <p className="mt-6 mb-2 text-center text-base font-medium text-neutral-400">Our Store:</p>
-                <a
+                <Link
                   href="https://www.tokopedia.com/kitchenmastery"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 mb-2"
                 >
                   <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={20} height={20} className="h-4 w-auto mr-2" />
                   Tokopedia
-                </a>
-                <a href="https://shopee.co.id/kitchenmastery" className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 mb-2">
+                </Link>
+                <Link href="https://shopee.co.id/kitchenmastery" className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600 mb-2">
                   <TbBrandShopee className="h-5 w-5 text-white mr-2" aria-hidden="true" />
                   Shopee
-                </a>
+                </Link>
               </div>
             </div>
           </div>

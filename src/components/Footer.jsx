@@ -3,6 +3,7 @@ import { ClockIcon, EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/24
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { TbBrandShopee } from "react-icons/tb";
 import Image from "next/image";
+import Link from "next/link";
 
 const footerNavigation = {
   contacts: [
@@ -79,15 +80,15 @@ export default function Footer() {
             <p className="text-base text-white">Making the world a better place through constructing elegant hierarchies.</p>
             <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-white hover:text-red-600">
+                <Link key={item.name} href={item.href} className="text-white hover:text-red-600">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
+                </Link>
               ))}
-              <a key="Tokopedia" href="https://www.tokopedia.com/kitchenmastery" className="text-white hover:text-red-600">
+              <Link key="Tokopedia" href="https://www.tokopedia.com/kitchenmastery" className="text-white hover:text-red-600">
                 <span className="sr-only">Tokopedia</span>
                 <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={24} height={24} className="p-0.5 hover:bg-neutral-800" aria-hidden="true" />
-              </a>
+              </Link>
             </div>
           </div>
           {/* link */}
@@ -113,10 +114,10 @@ export default function Footer() {
               <ul role="list" className="mt-4 space-y-4">
                 {footerNavigation.links.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className="flex text-sm text-neutral-200 hover:text-white align-center">
+                    <Link href={item.href} className="flex text-sm text-neutral-200 hover:text-white align-center">
                       <ChevronRightIcon className="h-5 w-5 text-red-600 mr-2" aria-hidden="true" />
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

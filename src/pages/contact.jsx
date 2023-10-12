@@ -3,6 +3,7 @@ import { EnvelopeOpenIcon } from "@heroicons/react/24/outline";
 import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
 import { SiShopee } from "react-icons/si";
 import Image from "next/image";
+import Link from "next/link";
 
 const supportLinks = [
   {
@@ -34,10 +35,10 @@ const supportLinks = [
 ];
 
 const contactsInfo = [
-  { name: "+62856-0057-0000", icon: AiOutlineWhatsApp },
-  { name: "kitchenmastery.id@gmail.com", icon: EnvelopeOpenIcon },
-  { name: "kitchenmasteryid", icon: AiOutlineInstagram },
-  { name: "kitchenmastery", icon: SiShopee },
+  { name: "+62856-0057-0000", href: "https://api.whatsapp.com/send?phone=6285600570000", icon: AiOutlineWhatsApp },
+  { name: "kitchenmastery.id@gmail.com", href: "mailto:kitchenmastery.id@gmail.com", icon: EnvelopeOpenIcon },
+  { name: "kitchenmasteryid", href: "https://www.instagram.com/kitchenmasteryid", icon: AiOutlineInstagram },
+  { name: "kitchenmastery", href: "https://shopee.co.id/kitchenmastery", icon: SiShopee },
 ];
 
 const title = "Hubungi Kami";
@@ -114,10 +115,10 @@ export default function Contacts() {
                   <ul role="list" className="mt-4 space-y-4">
                     {contactsInfo.map((contact) => (
                       <li key={contact.name}>
-                        <a className="flex" href="#">
+                        <Link className="flex" href={contact.href}>
                           <contact.icon className="h-5 w-5 text-red-600 mr-3 " aria-hidden="true" />
                           <p className="text-base text-neutral-200 hover:text-white">{contact.name}</p>
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

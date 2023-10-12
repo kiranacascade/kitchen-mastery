@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const products = [
   {
@@ -43,19 +44,19 @@ export default function BestSeller() {
             </div>
             <div className="mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900">
               <h3>
-                <a href={product.href} className="text-lg font-bold">
+                <Link href={product.href} className="text-lg font-bold">
                   <span aria-hidden="true" className="absolute inset-0" />
                   {product.name}
-                </a>
+                </Link>
               </h3>
             </div>
           </div>
         ))}
       </div>
       <div className="flex items-center justify-center mt-12">
-        <a href="/products" className="border border-red-600 py-2 px-4 rounded-md text-lg font-semibold text-gray-900 hover:bg-neutral-100">
-          See all products
-        </a>
+        <Link href="/products" className="border border-red-600 py-2 px-4 rounded-md text-lg font-semibold text-gray-900 hover:bg-neutral-100">
+          Lihat semua produk
+        </Link>
       </div>
     </div>
   );

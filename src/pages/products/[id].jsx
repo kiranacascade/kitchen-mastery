@@ -7,6 +7,7 @@ import { TbBrandShopee } from "react-icons/tb";
 import { useRouter } from "next/router";
 import LoadingIndicator from "@/components/LoadingIndicator";
 import Image from "next/image";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -88,7 +89,7 @@ export default function ProductDetail({ product }) {
               <div className="mt-6 space-y-1.5">
                 {Object.keys(product.details).map((detailKey) => (
                   <div key={detailKey} className="flex w-96 border border-neutral-800">
-                    <div className="w-40 text-center py-0.5 border border-neutral-800 text-xs font-semibold bg-gradient-to-r from-red-600 via-red-800 to-red-600 text-white tracking-wider uppercase">{detailKey}</div>
+                    <div className="w-40 text-center py-1 border border-neutral-800 text-xs font-semibold bg-gradient-to-r from-red-600 via-red-800 to-red-600 text-white tracking-wider uppercase">{detailKey}</div>
                     <div className="w-56 text-center py-0.5 text-sm border border-neutral-800 font-medium">{product.details[detailKey]}</div>
                   </div>
                 ))}
@@ -105,21 +106,21 @@ export default function ProductDetail({ product }) {
 
               <div className="mt-10 flex items-center">
                 <h3 className="mr-4 tracking-tight text-xl font-bold">Order Now via:</h3>
-                <a
+                <Link
                   href={product.href.tokopedia}
                   className="flex justify-center rounded-md border border-transparent bg-green-600 py-3 px-9 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 mr-2"
                 >
                   <TbBrandShopee className="h-5 w-5 text-white -ml-2 mr-2 my-auto" aria-hidden="true" />
                   Tokopedia
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href={product.href.shopee}
                   className="flex justify-center rounded-md border border-transparent bg-orange-600 py-3 px-12 text-base font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-gray-50"
                 >
                   <TbBrandShopee className="h-5 w-5 text-white -ml-2 mr-2 my-auto" aria-hidden="true" />
                   Shopee
-                </a>
+                </Link>
               </div>
             </div>
           </div>

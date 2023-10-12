@@ -1,5 +1,6 @@
 import { StarIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -37,10 +38,10 @@ export default function CTABingsoo() {
           <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-5xl lg:mb-8">
             Ada yang ingin ditanyakan?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-xl text-neutral-700">Most of our products are limited releases that won't come back. Get your favorite items while they're in stock.</p>
-          <a href="https://api.whatsapp.com/send?phone=6285600570000" className="mt-6 inline-block w-full rounded-lg border border-transparent bg-red-700 py-3 px-8 font-medium text-white hover:bg-red-800 sm:w-auto mr-4">
+          <p className="mx-auto mt-4 max-w-xl text-xl text-neutral-700">Most of our products are limited releases that won&apos;t come back. Get your favorite items while they&apos;re in stock.</p>
+          <Link href="https://api.whatsapp.com/send?phone=6285600570000" className="mt-6 inline-block w-full rounded-lg border border-transparent bg-red-700 py-3 px-8 font-medium text-white hover:bg-red-800 sm:w-auto mr-4">
             Konsultasi Sekarang
-          </a>
+          </Link>
         </div>
       </section>
 

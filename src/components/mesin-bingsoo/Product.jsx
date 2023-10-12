@@ -1,5 +1,6 @@
 import products from "@/data/bingsoo";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Product() {
   return (
@@ -16,10 +17,10 @@ export default function Product() {
               </div>
               <div className="flex flex-1 flex-col space-y-2 p-4 ">
                 <h3 className="text-lg font-bold text-neutral-900">
-                  <a href={product.href}>
-                    <span aria-hidden="true" className="absolute inset-0 " />
-                    {product.name}
-                  </a>
+                  {/* <Link href={product.href}> */}
+                  <span aria-hidden="true" className="absolute inset-0 " />
+                  {product.name}
+                  {/* </Link> */}
                 </h3>
                 <div className="flex flex-1 flex-col justify-end"></div>
               </div>

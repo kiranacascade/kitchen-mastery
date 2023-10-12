@@ -4,22 +4,22 @@ const perks = [
   {
     name: "Garansi Servis 6 Bulan",
     imageSrc: "/images/why/garansi.png",
-    description: "Order now and you'll get delivery absolutely free. Well, it's not actually free, we just price it into the products. Someone's paying for it, and it's not us.",
+    description: "Nikmati Garansi Servis 6 Bulan kami untuk ketenangan pikiran. Kami siap memperbaiki masalah tanpa biaya tambahan dalam 6 bulan pertama setelah pembelian.",
   },
   {
     name: "Gratis Simulasi",
     imageSrc: "/images/why/simulasi.png",
-    description: "We have a 10 year warranty with every product that you purchase, whether thats a new pen or organizer, you can be sure we'll stand behind it.",
+    description: "Dapatkan keuntungan dari Gratis Simulasi Operasional Mesin. Kami menyediakan simulasi gratis untuk membantu Anda menguasai pengoperasian mesin dengan percaya diri.",
   },
   {
     name: "Pemesanan Mudah",
     imageSrc: "/images/why/pemesanan.png",
-    description: "We understand that when your product arrives you might not particularly like it, or you ordered the wrong thing. Conditions apply here.",
+    description: "Nikmati kemudahan memesan produk kami melalui platform online terpercaya seperti Shopee dan Tokopedia. Dapatkan proses pemesanan yang aman, transparan, dan terjamin kepercayaannya.",
   },
   {
     name: "Konsultasi Sepuasnya",
     imageSrc: "/images/why/konsultasi.png",
-    description: "Like you, we love the planet, and so we've pledged 1% of all sales to the preservation and restoration of the natural environment.",
+    description: "Nikmati Konsultasi Sepuasnya. Kami siap membantu Anda dengan pertanyaan dan panduan tanpa batasan, sehingga Anda selalu merasa didukung dalam setiap langkah.",
   },
 ];
 
