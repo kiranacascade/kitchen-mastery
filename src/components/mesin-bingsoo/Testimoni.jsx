@@ -1,22 +1,23 @@
 import { StarIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
+import { SiWhatsapp } from "react-icons/si";
 
 const testimonials = [
   {
     id: 1,
-    quote: "My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!",
-    attribution: "Sarah Peters, New Orleans",
+    quote: "Mantap mesin normal, pengiriman cepat. Packing aman sekali dibonusin packing kayu👍🏻 bismillah buat usaha🤲🏻",
+    attribution: "Rattandi",
   },
   {
     id: 2,
-    quote: "I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!",
-    attribution: "Kelly McPherson, Chicago",
+    quote: "Adminnya responsif dan ngebantu banget, diajarkan sampe bisa pakai mesinnya. Ternyata gampang, sekali coba langsung bisa. Pengirimannya juga aman dikasih packing kayu",
+    attribution: "Kartika",
   },
   {
     id: 3,
-    quote: "Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.",
-    attribution: "Chris Paul, Phoenix",
+    quote: "Sudah lama cari mesin ini. Alhamdulillah dapet kualitas bagus harga terjangkau dan bergaransi. Mantap👍🏻",
+    attribution: "Naufal",
   },
 ];
 
@@ -38,9 +39,9 @@ export default function CTABingsoo() {
           <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-5xl lg:mb-8">
             Ada yang ingin ditanyakan?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-xl text-neutral-700">Most of our products are limited releases that won&apos;t come back. Get your favorite items while they&apos;re in stock.</p>
+          <p className="mx-auto mt-4 max-w-xl text-xl text-neutral-700">Tidak perlu ragu untuk bertanya, tim kami selalu siap memberikan jawaban terbaik untuk semua pertanyaan Anda. Kami siap mendengar dan membantu!</p>
           <Link href="https://api.whatsapp.com/send?phone=6285600570000" className="mt-6 inline-block w-full rounded-lg border border-transparent bg-red-700 py-3 px-8 font-medium text-white hover:bg-red-800 sm:w-auto mr-4">
-            Konsultasi Sekarang
+            Chat Sekarang
           </Link>
         </div>
       </section>

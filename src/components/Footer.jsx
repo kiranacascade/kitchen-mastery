@@ -77,7 +77,7 @@ export default function Footer() {
                 height={100} // Set the desired height
               />
             </div>
-            <p className="text-base text-white">Making the world a better place through constructing elegant hierarchies.</p>
+            <p className="text-base text-white">Kami menyediakan berbagai mesin pengolah makanan mulai dari mesin bingsoo hingga stand mixer untuk usahamu!</p>
             <div className="flex space-x-6">
               {footerNavigation.social.map((item) => (
                 <Link key={item.name} href={item.href} className="text-white hover:text-red-600">

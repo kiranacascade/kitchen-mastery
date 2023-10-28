@@ -22,6 +22,11 @@ export default function Product() {
                   {product.name}
                   {/* </Link> */}
                 </h3>
+
+                <h4 className="font-bold text-lg text-red-600">
+                  <span className="font-normal line-through text-sm text-gray-500 mr-2">{product.price}</span>
+                  {product.discPrice}
+                </h4>
                 <div className="flex flex-1 flex-col justify-end"></div>
               </div>
             </div>

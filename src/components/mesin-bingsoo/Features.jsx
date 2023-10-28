@@ -15,7 +15,10 @@ export default function Features() {
           <h2 id="features-heading" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Fitur Unggulan
           </h2>
-          <p className="mt-4 text-gray-500">The Organize modular system offers endless options for arranging your favorite and most used items. Keep everything at reach and in its place, while dressing up your workspace.</p>
+          <p className="mt-4 text-gray-500">
+            Eksplorasi Dunia Bingsoo dengan 4 Pilihan Kapasitas Mesin yang Berbeda! Dari yang Mini hingga Jumbo, Mesin Bingsoo kami menghadirkan fleksibilitas bagi bisnismu. Sajikan Bingsoo berkualitas tinggi dengan mesin terbaik, hanya di
+            sini!
+          </p>
         </div>
 
         <Tab.Group as="div" className="mt-4">
