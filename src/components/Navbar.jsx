@@ -39,6 +39,7 @@ export default function Navbar() {
           <span className="text-base text-neutral-300 font-medium">Our Store:</span>
           <Link
             href="https://www.tokopedia.com/kitchenmastery"
+            target="_blank"
             className="ml-4 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
           >
             <Image src="/images/logo-tokped-white.png" alt="Tokopedia" width={20} height={20} className="h-4 w-auto mr-2" />
@@ -46,6 +47,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="https://shopee.co.id/kitchenmastery"
+            target="_blank"
             className="ml-4 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700"
           >
             <TbBrandShopee className="h-5 w-5 text-white mr-2" aria-hidden="true" />

@@ -54,7 +54,7 @@ const products = [
     id: 3,
     name: "Cascade Bingsoo Machine Jumbo 250Kg/Day",
     type: "Jumbo 250kg/Day",
-    discPrice: "Rp 17.980.000",
+    discPrice: "Rp 19.980.000",
     price: "Rp 36.000.000",
     imageSrc: "/images/bingsoo-machine/jumbo.png",
     image: "/images/mesin-bingsoo/jumbo.png",

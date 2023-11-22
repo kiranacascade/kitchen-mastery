@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const title = "About";
-const description = "Di sini, Anda akan menemukan jawaban untuk pertanyaan umum seputar produk dan layanan kami. Silakan jelajahi FAQ kami untuk mendapatkan informasi yang Anda butuhkan.";
-const image = "/images/faq-image.jpg";
+const description =
+  "Selamat datang di halaman tentang Kitchen Mastery, di mana kami mempersembahkan kisah dan nilai-nilai di balik setiap alat dapur kami. Sambut keintiman dan semangat Kitchen Mastery, di mana setiap detail memiliki cerita sendiri.";
+const image = "/images/bg.jpg";
+
 export default function About() {
   return (
     <Layout title={title} description={description} image={image}>
@@ -16,8 +18,9 @@ export default function About() {
               <div className="lg:pr-16">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl xl:text-4xl">Kitchen Mastery</h1>
                 <p className="mt-6 text-base sm:text-lg text-gray-600">
-                  All the charts, datepickers, and notifications in the world can&apos;t beat checking off some items on a paper card. All the charts, datepickers, and notifications in the world can&apos;t beat checking off some items on a
-                  paper card. All the charts, datepickers, and notifications in the world can&apos;t beat checking off some items on a paper card.
+                  Selamat datang di Kitchen Mastery! Kami adalah pusat keajaiban kuliner, menyajikan koleksi mesin pangan terbaik untuk menginspirasi dan meningkatkan keterampilan Anda dalam seni memasak. Mulai dari mesin pembuat es bingsoo
+                  yang menyegarkan hingga stand mixer yang canggih, Kitchen Mastery hadir untuk membantu Anda mencapai level baru dalam dunia kuliner. Jelajahi inovasi kami, temukan keunikan setiap produk, dan bersama-sama kita ciptakan
+                  pengalaman kuliner yang tak terlupakan.
                 </p>
                 <div className="mt-8">
                   <Link href="/contact" className="inline-block rounded-md border border-transparent bg-red-600 py-3 px-8 font-medium text-white hover:bg-red-700">

@@ -27,7 +27,7 @@ const allProducts = [
   {
     id: 2,
     name: "Cascade Bingsoo Machine Jumbo 250Kg/Day",
-    price: "Rp 18.000.000",
+    price: "Rp 20.000.000",
     rating: 5,
     href: { tokopedia: "https://www.tokopedia.com/kitchenmastery/jumbo-mesin-bingsoo-korea-snow-ice-maker-es-serut-salju-250kg-1000w", shopee: "https://shp.ee/dq6jd47" },
     imageSrc: "/images/bingsoo-machine/jumbo.png",

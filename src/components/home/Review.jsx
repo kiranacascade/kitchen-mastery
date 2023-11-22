@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const reviews = {
   average: 5,
-  totalCount: 6,
+  totalCount: 37,
   counts: [
-    { rating: 5, count: 6 },
+    { rating: 5, count: 37 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
@@ -18,16 +18,25 @@ const reviews = {
       content: `
         <p>Mantap mesin normal, pengiriman cepat. Packing aman sekali dibonusin packing kayu👍🏻 bismillah buat usaha🤲🏻</p>
       `,
-      author: "Rattandi Ibnu Tsaqif",
+      author: "Rattandi",
       avatarSrc: "/images/avatar.jpg",
     },
     {
       id: 2,
       rating: 5,
       content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>Adminnya responsif dan ngebantu banget, diajarkan sampe bisa pakai mesinnya. Ternyata gampang, sekali coba langsung bisa. Pengirimannya juga aman dikasih packing kayu</p>
       `,
-      author: "Emily Selman",
+      author: "Kartika",
+      avatarSrc: "/images/avatar.jpg",
+    },
+    {
+      id: 3,
+      rating: 5,
+      content: `
+        <p>Sudah lama cari mesin ini. Alhamdulillah dapet kualitas bagus harga terjangkau dan bergaransi. Mantap👍🏻</p>
+      `,
+      author: "Naufal",
       avatarSrc: "/images/avatar.jpg",
     },
     // More reviews...

@@ -22,11 +22,11 @@ export default function Home() {
               </div>
               <div className="relative py-16 px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-center text-4xl font-bold sm:text-5xl lg:text-6xl">
-                  <span className="block text-white">Welcome to</span>
-                  <span className="block text-neutral-200 mt-2">Kitchen Mastery</span>
+                  <span className="block text-3xl sm:text-4xl text-neutral-200 ">Selamat datang di</span>
+                  <span className="block text-white mt-2">Kitchen Mastery</span>
                 </h1>
                 <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
-                  Kami menyediakan berbagai mesin makanan dan minuman. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.
+                  Temukan keajaiban kreasi kuliner Anda dengan koleksi mesin pangan terbaik kami, mulai dari mesin pembuat es bingsoo yang menyegarkan hingga stand mixer yang akan mengangkat usaha kuliner Anda ke level berikutnya!
                 </p>
                 <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                   <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">

@@ -109,6 +109,7 @@ export default function ProductDetail({ product }) {
                 <Link
                   href={product.href.tokopedia}
                   className="flex justify-center rounded-md border border-transparent bg-green-600 py-3 px-9 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 mr-2"
+                  target="_blank"
                 >
                   <TbBrandShopee className="h-5 w-5 text-white -ml-2 mr-2 my-auto" aria-hidden="true" />
                   Tokopedia
@@ -117,6 +118,7 @@ export default function ProductDetail({ product }) {
                 <Link
                   href={product.href.shopee}
                   className="flex justify-center rounded-md border border-transparent bg-orange-600 py-3 px-12 text-base font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                  target="_blank"
                 >
                   <TbBrandShopee className="h-5 w-5 text-white -ml-2 mr-2 my-auto" aria-hidden="true" />
                   Shopee

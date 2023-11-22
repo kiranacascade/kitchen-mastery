@@ -24,10 +24,10 @@ export default function Incentives() {
       <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
         <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
           <div>
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900">We built our business on great customer service</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900">Nikmati Layanan Terbaik, Anda Prioritas Kami!</h2>
             <p className="mt-4 text-gray-500">
-              At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring about that. Our new strategy is to write a bunch of things that look really good in the headlines, then clarify in the
-              small print but hope people don&apos;t actually read it.
+              Anda adalah prioritas utama kami di Kitchen Mastery! Kami menghadirkan layanan terbaik dengan fokus penuh pada kepuasan Anda. Dengan komitmen mendengarkan dan membangun hubungan yang erat, setiap interaksi dengan kami
+              mencerminkan nilai sejati dari layanan kami. Kitchen Mastery hadir untuk menjadi mitra Anda dalam setiap perjalanan kuliner, memberikan dukungan dan inspirasi yang Anda butuhkan.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg bg-gray-100">

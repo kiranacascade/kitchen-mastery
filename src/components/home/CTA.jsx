@@ -18,7 +18,11 @@ export default function CTA() {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <Link href="https://api.whatsapp.com/send?phone=6285600570000" className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50">
+              <Link
+                href="https://api.whatsapp.com/send?phone=6285600570000"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                target="_blank"
+              >
                 Konsultasi dengan kami
                 <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
               </Link>
