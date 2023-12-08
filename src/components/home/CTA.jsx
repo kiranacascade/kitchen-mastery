@@ -14,7 +14,8 @@ export default function CTA() {
           <h2 className="text-lg font-semibold text-gray-300">Customer Service Siaga</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Kami Siap Membantu</p>
           <p className="mt-3 text-lg text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.
+            Dengan Customer Service Siaga, pengalaman pelanggan Anda menjadi prioritas utama. Tim kami yang ramah dan profesional siap memberikan solusi cepat dan efisien untuk setiap kebutuhan Anda. Hubungi kami sekarang untuk layanan
+            tanpa hambatan dan bantuan terkini.
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
